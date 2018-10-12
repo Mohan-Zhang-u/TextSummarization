@@ -16,7 +16,5 @@ tar -xvf To_Be_Clean/finished_files/test.tar -C To_Be_Clean/finished_files
 export DATA=To_Be_Clean/finished_files
 
 # run the model
-python decode_full_model.py --path=Summarizations --model_dir=pretrained --beam=5 --test
+python decode_full_model.py --path=summarizations --model_dir=pretrained --beam=5 --test
 
-#now, clean up data
-rm -rf To_Be_Clean
