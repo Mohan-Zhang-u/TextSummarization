@@ -22,13 +22,7 @@ The code is tested on the *Linux* operating system.
 - if you want to run it agian to generate new summaries, please make sure to execute clean.sh (by type ./clean.sh in bash command under this directoryin bash command under this directory) to clean up previously-generated summaries and temp files.
 
 ## Train your own models
-Please follow the instructions
-*[here](https://github.com/ChenRocks/cnn-dailymail)*
-for downloading and preprocessing the CNN/DailyMail dataset.
-After that, specify the path of data files by setting the environment variable
-`export DATA=[path/to/decompressed/data]`
 
-To re-train our best model:
 1. pretrained a *word2vec* word embedding
 ```
 python train_word2vec.py --path=[path/to/word2vec]
@@ -46,8 +40,7 @@ python train_extractor_ml.py --path=[path/to/extractor/model] --w2v=[path/to/wor
 ```
 python train_full_rl.py --path=[path/to/save/model] --abs_dir=[path/to/abstractor/model] --ext_dir=[path/to/extractor/model]
 ```
-After the training finishes you will be able to run the decoding and evaluation following the instructions in the previous section.
-
-The above will use the best hyper-parameters we used in the paper as default.
+After the training finishes you will be able to run the decoding as described above.
+The above will use the best hyper-parameters as default.
 Please refer to the respective source code for options to set the hyper-parameters.
 
