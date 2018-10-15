@@ -4,15 +4,13 @@
 export CLASSPATH=./stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
 export DATA=To_Be_Clean/finished_files
 
-# put all the news you want to summarize in my_news, and the result will be in To_Save_My_Files
-# but, the files in my_news will be tokenized (so no longer readable)
+# put all the news you want to summarize in my_news, and the result will be in summarizations
 
-# first, separate news sentences by dot, as did in the CNN dataset https://cs.nyu.edu/~kcho/DMQA/,
-# by: python separate_sentences.py <your_news_dir>
-python separate_sentences.py my_news
+# first, separate news sentences by dot, as did in the CNN dataset https://cs.nyu.edu/~kcho/DMQA/
+python separate_sentences.py my_news To_Be_Clean/tokenized_my_news
 
-# now, tokenize it and make jsons by: python make_datafiles.py <your_news_dir>
-python make_datafiles.py my_news
+# now, tokenize it and make jsons by: python make_datafiles.py <your_tokenized_news_dir>
+python make_datafiles.py To_Be_Clean/tokenized_my_news
 
 # now, unzip
 tar -xvf To_Be_Clean/finished_files/test.tar -C To_Be_Clean/finished_files
