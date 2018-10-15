@@ -1,5 +1,6 @@
 """ make reference text files needed for ROUGE evaluation """
 import json
+import sys
 import os
 from os.path import join, exists
 from time import time
@@ -36,5 +37,26 @@ def main():
             os.makedirs(join(DATA_DIR, 'refs', split))
         dump(split)
 
+def make_ref_for_news_name():
+    if not exists(join(DATA_DIR, 'refs')):
+        os.makedirs(join(DATA_DIR, 'refs'))
+        start = time()
+        print('start processing test split...')
+        data_dir = join(DATA_DIR, 'test')
+        dump_dir = join(DATA_DIR, 'refs')
+        n_data = count_data(data_dir)
+        for i in range(n_data):
+            print('processing {}/{} ({:.2f}%%)\r'.format(i, n_data, 100 * i / n_data),
+                  end='')
+            with open(join(data_dir, '{}.json'.format(i))) as f:
+                data = json.loads(f.read())
+            ids = data['id']
+            with open(join(dump_dir, '{}.ref'.format(i)), 'w') as f:
+                f.write(ids)
+        print('finished in {}'.format(timedelta(seconds=time() - start)))
+
 if __name__ == '__main__':
-    main()
+    if len(sys.argv) == 2:
+        make_ref_for_news_name()
+    else:
+        main()
