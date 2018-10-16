@@ -8,6 +8,55 @@ the bees were 10,000 times more potent than ddt .
 millions of bees died .
 clothianidin developed by bayer crop science from a class of insecticides called neonicotinoids .
 `` it was a disaster , '' german president says .
+
+separated summaries:
+in late april , early may , dismayed beekeepers in germany looked on as whole colonies perished .
+france , the netherlands and italy reported big losses .
+the bees were 10,000 times more potent than ddt .
+millions of bees died .
+the technology for creating gm honeybees is in its infancy .
+this is the plan to create a more resilient strain of honeybee .
+if successful , it could lead to a hardier species , one that is resistant to natural and manmade hazards .
+another , more controversial , response to the slump in bee populations .
+jay evans heads the bee research lab at the us department of agriculture .
+it is always hive-like - 30c and humid - in the narrow , windowless laboratory .
+each disc contained 140 tiny plug holes in each of which a single honeybee embryo was growing .
+evans calls them `` throw a lot of nature under the bus ''
+these discs were passed to a third student at a separate workstation .
+beye said , shaking his head in lingering disbelief .
+in person , he is affable and professorial .
+he says inferences of a bayer connection were totally false .
+the purpose of their work was to understand the genetic basis for bee behaviour and health .
+jay evans thinks his breakthrough gm bee should remain confined to the lab .
+haefeker , a former tech entrepreneur , came to beekeeping late in life .
+he , his wife and two sons returned home to germany in 2001 .
+he developed an iphone app for breeders called iqueen and politics .
+beekeepers fear genetic engineering of honeybees will introduce patents .
+damage to the bee population is already threatening crops worldwide .
+the un 's food and agriculture estimates that pollinators help farmers grow crops worth up to $ 577bn -lrb- ? 437bn -rrb- annually .
+save the bees tops the list .
+more than a dozen eu member states sought loopholes to stay the ban .
+bayer officials say the industry is beginning to grow less reliant on chemicals .
+despite the setback , haefeker remains defiant .
+digital crop protection will feed the planet 's billions .
+haefeker launched into what he called `` the big question ''
+nobody , not even beekeepers , claimed an stake on the bees ' genetic code .
+the free exchange of breeding materials from the queens and her eggs to the drones ' sperm has been encouraged to keep colonies genetically diverse .
+apimondia is seeking to enshrine this freedom as a public good that nobody can own outright .
+losses have doubled in the last 10 years .
+he blames a host of factors , with disease and parasites such as the varroa mite chief among them .
+he says he is closely watching what happens next in europe .
+haefeker and arno bruder run their beekeeping enterprise on a field bordering two organic farms .
+`` we need to keep an eye on this craziness , '' his text read .
+'' .
+
+separated_summaries'_summary:
+in late april , dismayed beekeepers in germany looked on as whole colonies perished .
+the bees were 10,000 times more potent than ddt .
+technology for creating gm honeybees is in its infancy .
+france , the netherlands and italy reported big losses .
+millions of bees died .
+
 content:
 The spring of 2008 was brutal for Europe's honeybees. In late April and early May, during the corn-planting season, dismayed beekeepers in Germany's upper Rhine valley looked on as whole colonies perished. Millions of bees died. France, the Netherlands and Italy reported big losses, but in Germany the incident took on the urgency of a national crisis. "It was a disaster," recalled Walter Haefeker, German president of the European Professional Beekeepers Association. "The government had to set up containers along the autobahn where beekeepers could dump their hives."
 An investigation in July of that year concluded that the bees in Germany died of mass poisoning by the pesticide clothianidin, which can be 10,000 times more potent than DDT. In the months leading up to the bee crisis, clothianidin, developed by Bayer Crop Science from a class of insecticides called neonicotinoids, had been used up and down the Rhine following an outbreak of corn rootworm. The pesticide is designed to attack the nervous system of crop-munching pests, but studies have shown it can be harmful to insects such as the European honeybee. It muddles the bees' super-acute sense of direction and upsets their feeding habits, while it can also alter the queen's reproductive anatomy and sterilise males. As contaminated beehives piled up, Bayer paid ?2m (?1.76m) into a compensation fund for beekeepers in the affected area, but offered no admission of guilt.
