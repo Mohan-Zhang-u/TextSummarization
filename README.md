@@ -19,9 +19,9 @@ The code is tested on the *Linux* operating system.
 - make sure you have both pretrained models *[here](https://bit.ly/acl18_pretrained)* and Stanford CoreNLP *[here](https://stanfordnlp.github.io/CoreNLP/)* in your directory.
 (make sure you've copied all the .jar file into the directory stanford-corenlp-full-\<version you choose\>)
 - put all the articles you want to summarize (must be in plain text format and contains only unicode characters) in the my_news directory.
-- run the run.sh script (type ./run.sh in bash command under this directory), which will execute a series of command and python files to generate the summaries.
+- run the run.sh script (type ./run.sh in bash commandline under this directory), which will execute a series of command and python files to generate the summaries.
 - after running the script, summarizations of my_news shall be generated in the directory summarizations/output
-- if you want to run it agian to generate new summaries, please make sure to execute clean.sh (by type ./clean.sh in bash command under this directoryin bash command under this directory) to clean up previously-generated summaries and temp files.
+- if you want to run it agian to generate new summaries, please make sure to execute clean.sh (by type ./clean.sh in bash commandline under this directory) to clean up previously-generated summaries and temp files.
 - also, there's already a python file provided for you to separate a large file into smaller files to achieve better summarziation performance.
 run ```python separate_large_files.py --target_file_location=[path/to/target's parent directory] --target_file_name=[target file's name] --storage_location=[(optional) path/to/storage/location] --num_of_sent=[(optional) number of paragraphs per article]```
 
