@@ -2,5 +2,5 @@ __pycache__
 summarizations
 To_Be_Clean
 my_news
-stanford-corenlp-full-2018-10-05/*
+stanford-corenlp-full-2018-10-05/*.jar
 ./idea
