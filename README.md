@@ -1,11 +1,12 @@
-# Fast Abstractive Summarization-RL
+# Text Summarization Tool
 This repository is based on the ACL 2018 paper:
 
 *[Fast Abstractive Summarization with Reinforce-Selected Sentence Rewriting](https://arxiv.org/abs/1805.11080)*.
 
 ## Dependencies
-- **Python 3**
-- [PyTorch](https://github.com/pytorch/pytorch) 
+- **Python 3** (tested both on 3.6 and 3.7)
+- Java runtime environment (JRE 8 will work)
+- [PyTorch](https://github.com/pytorch/pytorch) (tested both on 0.4.0 and 0.4.1 with cuda 8.0 or 9.0)
 - [gensim](https://github.com/RaRe-Technologies/gensim)
 - [cytoolz](https://github.com/pytoolz/cytoolz)
 - [tensorboardX](https://github.com/lanpa/tensorboard-pytorch)
@@ -16,6 +17,7 @@ The code is tested on the *Linux* operating system.
 
 ## How to run it
 - make sure you have both pretrained models *[here](https://bit.ly/acl18_pretrained)* and Stanford CoreNLP *[here](https://stanfordnlp.github.io/CoreNLP/)* in your directory.
+(make sure you've copied all the .jar file into the directory stanford-corenlp-full-\<version you choose\>)
 - put all the articles you want to summarize (must be in plain text format and contains only unicode characters) in the my_news directory.
 - run the run.sh script (type ./run.sh in bash command under this directory), which will execute a series of command and python files to generate the summaries.
 - after running the script, summarizations of my_news shall be generated in the directory summarizations/output
