@@ -23,4 +23,8 @@ python decode_full_model.py --path=summarizations --model_dir=pretrained/acl --b
 # generate refs files to rename the summaries
 python make_eval_references.py rename
 
+# rename summaries
 python rename_summaries.py --refs_path=To_Be_Clean/finished_files/refs --summarization_path=summarizations/output
+
+#capitalize summaries
+python capitalize.py --original_news_path=my_news --summarization_path=summarizations/output

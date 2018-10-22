@@ -18,6 +18,9 @@ The code is tested on the *Linux* operating system.
 ## How to run it
 - make sure you have both pretrained models *[here](https://bit.ly/acl18_pretrained)* and Stanford CoreNLP *[here](https://stanfordnlp.github.io/CoreNLP/)* in your directory.
 (make sure you've copied all the .jar file into the directory stanford-corenlp-full-\<version you choose\>)
+- make sure you have nltk tokenized installed (in python environment, type 
+```>>> import nltk ```
+```>>> nltk.download('punkt')```)
 - put all the articles you want to summarize (must be in plain text format and contains only unicode characters) in the my_news directory.
 - run the run.sh script (type ./run.sh in bash commandline under this directory), which will execute a series of command and python files to generate the summaries.
 - after running the script, summarizations of my_news shall be generated in the directory summarizations/output
