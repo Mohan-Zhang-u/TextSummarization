@@ -1,5 +1,17 @@
 #!/usr/bin/env bash
 
+# a basic interface:
+
+echo "Welcome to the text Summarization Model!"
+echo "Please make sure the file you want to summarize is located in my_news folder and the file name does not contains any special character"
+echo "Warning: any previous summary and intermediate file will be cleaned up."
+read -p "Press enter to continue:"
+
+# trying to clean every remaining intermediate files
+rm -rf To_Be_Clean
+
+rm -rf summarizations
+
 # set the path
 export CLASSPATH=./stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
 export DATA=To_Be_Clean/finished_files
@@ -28,3 +40,5 @@ python rename_summaries.py --refs_path=To_Be_Clean/finished_files/refs --summari
 
 #capitalize summaries
 python capitalize.py --original_news_path=my_news --summarization_path=summarizations/output
+
+echo "Summarization finished. All summaries are now in summarizations/output folder."
