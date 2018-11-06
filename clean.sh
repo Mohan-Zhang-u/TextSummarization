@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-#now, clean up data
-rm -rf To_Be_Clean
-
-rm -rf summarizations
+if (( $# == 0 ))
+then
+    echo "clean the To_Be_Clean dir"
+    rm -rf To_Be_Clean
+else
+    for var in "$@"
+    do
+        rm -rf To_Be_Clean/$var
+    done
+fi

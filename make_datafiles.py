@@ -16,8 +16,8 @@ dm_double_close_quote = '\u201d'
 END_TOKENS = ['.', '!', '?', '...', "'", "`", '"',
               dm_single_close_quote, dm_double_close_quote, ")"]
 
-my_tokenized_stories_dir = "To_Be_Clean/my_stories_tokenized"
-finished_files_dir = "To_Be_Clean/finished_files"
+# my_tokenized_stories_dir = "To_Be_Clean/my_stories_tokenized"
+# finished_files_dir = "To_Be_Clean/finished_files"
 
 tokenized_stories_list = []
 
@@ -180,8 +180,10 @@ def my_write_to_tar(tokenized_files_location, out_file, makevocab=False):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) == 2:
+    if len(sys.argv) == 4:
         my_stories_dir =sys.argv[1]
+        my_tokenized_stories_dir = sys.argv[2] #"To_Be_Clean/my_stories_tokenized"
+        finished_files_dir = sys.argv[3] #"To_Be_Clean/finished_files"
 
         if not os.path.exists(my_tokenized_stories_dir):
             os.makedirs(my_tokenized_stories_dir)
@@ -194,6 +196,6 @@ if __name__ == '__main__':
     
     else:
         print("USAGE: python make_datafiles.py"
-              " <your_stories_dir>")
+              " <your_stories_dir> <your_tokenized_stories_dir> <finished_files_dir>")
         sys.exit()
     
