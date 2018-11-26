@@ -15,22 +15,27 @@ This repository is based on the ACL 2018 paper:
 You can use the python package manager of your choice (*pip/conda*) to install the dependencies.
 The code is tested on the *Linux* operating system.
 
-## How to run it
+## How to run the server's backend
 - make sure you have both pretrained models *[here](https://bit.ly/acl18_pretrained)* and Stanford CoreNLP *[here](https://stanfordnlp.github.io/CoreNLP/)* in your directory.
 (make sure you've copied all the .jar file into the directory stanford-corenlp-full-\<version you choose\>)
 - make sure you have nltk tokenized installed (in python environment, type 
 ```>>> import nltk ```
 ```>>> nltk.download('punkt')```)
-- put all the articles you want to summarize (must be in plain text format and contains only unicode characters) in the my_news directory.
+- create a subfolder under To_Be_Clean/$name_of_your_choice$/my_news
+- put all the articles you want to summarize (must be in plain text format and contains only unicode characters) in the To_Be_Clean/$name_of_your_choice$/my_news directory.
 
 - run the python script bash_script_executer.py ```python bash_script_executer.py```, the summarizations of my_news shall be generated in the directory summarizations/output
 <!--- 
-- run the run.sh script (type ./run.sh in bash commandline under this directory), which will execute a series of command and python files to generate the summaries.
-- after running the script, summarizations of my_news shall be generated in the directory summarizations/output
+- run the run.sh script (type ./run.sh $name_of_your_choice$ in bash commandline under this directory), which will execute a series of command and python files to generate the summaries.
+- after running the script, summarizations of my_news shall be generated in the directory To_Be_Clean/$name_of_your_choice$/summarizations/output
 - if you want to run it again to generate new summaries, please make sure to execute clean.sh (by type ./clean.sh in bash commandline under this directory) to clean up previously-generated summaries and temp files.
 -->
 - also, there's already a python file provided for you to separate a large file into smaller files to achieve better summarziation performance.
 run ```python separate_large_files.py --target_file_location=[path/to/target's parent directory] --target_file_name=[target file's name] --storage_location=[(optional) path/to/storage/location] --num_of_sent=[(optional) number of paragraphs per article]```
+
+## How to run the server
+- host the model through a public ip address so that you have access to the index.html, then surf to that ip address through a browser to use the web tool.
+- use cases and codes are all under Apache 2.0 License
 
 ## Train your own models
 
