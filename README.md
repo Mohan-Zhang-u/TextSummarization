@@ -24,7 +24,7 @@ The code is tested on the *Linux* operating system.
 - create a subfolder under To_Be_Clean/$name_of_your_choice$/my_news
 - put all the articles you want to summarize (must be in plain text format and contains only unicode characters) in the To_Be_Clean/$name_of_your_choice$/my_news directory.
 
-- run the python script bash_script_executer.py ```python bash_script_executer.py```, the summarizations of my_news shall be generated in the directory summarizations/output
+- run the python script bash_script_executer.py ```python bash_script_executer.py $name_of_your_choice$```, the summarizations of my_news shall be generated in the directory To_Be_Clean/$name_of_your_choice$/summarizations/output
 <!--- 
 - run the run.sh script (type ./run.sh $name_of_your_choice$ in bash commandline under this directory), which will execute a series of command and python files to generate the summaries.
 - after running the script, summarizations of my_news shall be generated in the directory To_Be_Clean/$name_of_your_choice$/summarizations/output
@@ -35,7 +35,7 @@ run ```python separate_large_files.py --target_file_location=[path/to/target's p
 
 ## How to run the server
 - host the model through a public ip address so that you have access to the index.html, then surf to that ip address through a browser to use the web tool.
-- use cases and codes are all under Apache 2.0 License
+- all use cases and codes are under Apache 2.0 License
 
 ## Train your own models
 
