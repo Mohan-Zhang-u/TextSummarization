@@ -21,6 +21,10 @@ rm -rf To_Be_Clean/$1/finished_files
 rm -rf To_Be_Clean/$1/my_stories_tokenized
 rm -rf To_Be_Clean/$1/tokenized_my_news
 
+mkdir -p To_Be_Clean
+mkdir -p To_Be_Clean/$1
+mkdir -p To_Be_Clean/$1/my_news
+
 # set the path
 export CLASSPATH=./stanford-corenlp-full-2018-10-05/stanford-corenlp-3.9.2.jar
 export DATA=To_Be_Clean/$1/finished_files
