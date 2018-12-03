@@ -10,6 +10,7 @@ This repository is based on the ACL 2018 paper:
 - [gensim](https://github.com/RaRe-Technologies/gensim)
 - [cytoolz](https://github.com/pytoolz/cytoolz)
 - [tensorboardX](https://github.com/lanpa/tensorboard-pytorch)
+- [nltk](https://www.nltk.org/)
 - [pyrouge](https://github.com/bheinzerling/pyrouge) (for evaluation)
 
 You can use the python package manager of your choice (*pip/conda*) to install the dependencies.
