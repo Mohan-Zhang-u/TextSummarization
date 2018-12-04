@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, render_template
 import subprocess
 import time
 import codecs
@@ -21,7 +21,11 @@ def open_sum(ctime):
     
 @app.route("/")
 def hello():
-    return '<form action="/echo" method="GET"><input name="text"><input type="submit" value="Text To Summarize (Has to be encoded in UTF-8)"></form>'
+    return render_template('frontpage.html')
+
+# @app.route("/")
+# def hello():
+#     return '<form action="/echo" method="GET"><input name="text"><input type="submit" value="Text To Summarize (Has to be encoded in UTF-8)"></form>'
     
 @app.route("/echo")
 def echo(): 
@@ -33,7 +37,7 @@ def echo():
     p1.wait()
     my_sum = open_sum(ctime)
     subprocess.call("./clean.sh " + ctime, shell=True)
-    return my_sum
+    return render_template('frontpage.html',input_text=file_text, summary=my_sum)
 
     
     

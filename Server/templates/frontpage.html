@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style> 
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+    </style>
+</head>
+
+<body>
+
+<h2>Text Summarization Demo</h2>
+
+<form action="/echo" method="GET">
+Text to summarize:<br>
+
+{% if input_text %}
+<!-- <input type="text" name="text" value="{{ input_text }}"> -->
+<textarea name="text">{{ input_text }}</textarea>
+{% else %}
+<!-- <input type="text" name="text"> -->
+<textarea name="text"></textarea>
+{% endif %}
+<br>
+
+Summary:<br>
+{% if summary %}
+<!-- <input type="text" name="summary" value="{{ summary }}"> -->
+<textarea name="summary">{{ summary }}</textarea>
+{% else %}
+<!-- <input type="text" name="summary" value=""> -->
+<textarea name="summary"></textarea>
+{% endif %}
+<br><br>
+<input type="submit" value="Summarize">
+</form>
+
+<p>Text to summarize has to be encoded in UTF-8.</p>
+<p>Developed by Mohan Zhang at Exxon Mobil. (mohan.zhang@exxonmobil.com) All rights reserved.</p>
+
+</body>
+</html>
