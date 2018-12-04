@@ -1,4 +1,5 @@
 # Please try the demo at 52.183.29.144:5000
+- make sure input more than 10 utf-8 encoding words to generate a summary!
 
 # Text Summarization Tool
 This repository is based on the ACL 2018 paper:
