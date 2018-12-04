@@ -2,7 +2,26 @@
 <html>
 
 <head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <style> 
+    
+    .buttonload {
+        background-color: #4CAF50; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 12px 24px; /* Some padding */
+        font-size: 16px; /* Set a font-size */
+    }
+
+    /* Add a right margin to each icon */
+    .fa {
+        margin-left: -12px;
+        margin-right: 8px;
+    }
+
     textarea {
         width: 100%;
         height: 150px;
@@ -18,6 +37,14 @@
 </head>
 
 <body>
+
+<script>
+    function toggleFunction() {
+        var element = document.getElementById("myi");
+        element.classList.toggle("fa-spinner");
+        element.classList.toggle("fa-spin");
+    }
+</script>
 
 <h2>Text Summarization Demo</h2>
 
@@ -42,9 +69,13 @@ Summary:<br>
 <textarea name="summary"></textarea>
 {% endif %}
 <br><br>
-<input type="submit" value="Summarize">
+<!-- <input type="submit" value="Summarize"> -->
+<button id="myButton" type="submit" class="buttonload" onclick="toggleFunction()">
+    <i class="fa" id = "myi"></i>Summarize
+</button>
 </form>
 
+<p>Text to summarize should cotian more than 5 words.</p>
 <p>Text to summarize has to be encoded in UTF-8.</p>
 <p>Developed by Mohan Zhang at Exxon Mobil. (mohan.zhang@exxonmobil.com) All rights reserved.</p>
 
