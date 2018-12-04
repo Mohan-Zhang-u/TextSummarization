@@ -43,7 +43,7 @@ run ```python separate_large_files.py --target_file_location=[path/to/target's p
 - you can install by running ``` sudo apt-get install libexpat1 apache2-utils ssl-cert -y ``` and ``` sudo apt-get install libapache2-mod-wsgi -y ```
 - make sure apache2 server is running and cgi-scripts are enabled. You may find this [tutorial](https://code-maven.com/set-up-cgi-with-apache) helpful: 
 - make sure you server can be accessed with a public IP address and port 5000 is enabled.
-- run ``` ./Server/flaskrun.sh ```
+- run ``` ./Server/flaskrun.sh ```, the feedback shoudl be sometime like ```* Debug mode: on * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit) * Restarting with stat * Debugger is active! * Debugger PIN: XXX-XXX-XXX```
 - you should be able to access the up-and-running server through internally ```0.0.0.0:5000``` or externally ```Public.IP.Address:5000```
 - all use cases and codes are under Apache 2.0 License
 
