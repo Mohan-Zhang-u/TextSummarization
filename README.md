@@ -1,4 +1,5 @@
 # Please try the demo at 52.183.29.144:5000
+- This is a server instance to demo this text summarization model.
 
 # Text Summarization Tool
 This repository is based on the ACL 2018 paper:
@@ -37,6 +38,9 @@ The code is tested on the *Linux* operating system.
 run ```python separate_large_files.py --target_file_location=[path/to/target's parent directory] --target_file_name=[target file's name] --storage_location=[(optional) path/to/storage/location] --num_of_sent=[(optional) number of paragraphs per article]```
 
 ## How to run the server
+## Dependencies
+- apache2 with cgi tookit
+- you can install by runing ``` sudo apt-get install libexpat1 apache2-utils ssl-cert -y ``` and ``` sudo apt-get install libapache2-mod-wsgi -y ```
 - host the model through a public ip address so that you have access to the index.html, then surf to that ip address through a browser to use the web tool.
 - all use cases and codes are under Apache 2.0 License
 
