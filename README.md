@@ -1,5 +1,5 @@
 # Please try the demo at 52.183.29.144:5000
-- This is a server instance to demo this text summarization model.
+- Above url links to a server instance to demo this text summarization model.
 
 # Text Summarization Tool
 This repository is based on the ACL 2018 paper:
@@ -40,8 +40,11 @@ run ```python separate_large_files.py --target_file_location=[path/to/target's p
 ## How to run the server
 ## Dependencies
 - apache2 with cgi tookit
-- you can install by runing ``` sudo apt-get install libexpat1 apache2-utils ssl-cert -y ``` and ``` sudo apt-get install libapache2-mod-wsgi -y ```
-- host the model through a public ip address so that you have access to the index.html, then surf to that ip address through a browser to use the web tool.
+- you can install by running ``` sudo apt-get install libexpat1 apache2-utils ssl-cert -y ``` and ``` sudo apt-get install libapache2-mod-wsgi -y ```
+- make sure apache2 server is running and cgi-scripts are enabled. You may find this [tutorial](https://code-maven.com/set-up-cgi-with-apache) helpful: 
+- make sure you server can be accessed with a public IP address and port 5000 is enabled.
+- run ``` ./Server/flaskrun.sh ```
+- you should be able to access the up-and-running server through internally ```0.0.0.0:5000``` or externally ```Public.IP.Address:5000```
 - all use cases and codes are under Apache 2.0 License
 
 ## Train your own models
