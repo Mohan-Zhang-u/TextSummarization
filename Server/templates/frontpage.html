@@ -70,7 +70,7 @@ Summary:<br>
 {% endif %}
 <br><br>
 <!-- <input type="submit" value="Summarize"> -->
-<button id="myButton" type="submit" class="buttonload" onclick="toggleFunction()">
+<button id="myButton" type="submit" class="buttonload" onclick="this.form.submit(); toggleFunction(); this.disabled=true;">
     <i class="fa" id = "myi"></i>Summarize
 </button>
 </form>
