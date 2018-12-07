@@ -53,10 +53,10 @@ Text to summarize:<br>
 
 {% if input_text %}
 <!-- <input type="text" name="text" value="{{ input_text }}"> -->
-<textarea name="text">{{ input_text }}</textarea>
+<textarea name="text" placeholder="Text to summarize should cotain more than 5 words, otherwise why would you want to summarize it? XD">{{ input_text }}</textarea>
 {% else %}
 <!-- <input type="text" name="text"> -->
-<textarea name="text"></textarea>
+<textarea name="text" placeholder="Text to summarize should cotain more than 5 words, otherwise why would you want to summarize it? XD"></textarea>
 {% endif %}
 <br>
 
@@ -75,7 +75,8 @@ Summary:<br>
 </button>
 </form>
 
-<p>Text to summarize should cotain more than 5 words.</p>
+
+<p>Chrome is the recommended and only tested browser.</p>
 <p>Text to summarize has to be encoded in UTF-8.</p>
 <p>Please be aware: This Text Summarization Demo approved for use with public data only.</p>
 <p>All rights reserved.</p>
