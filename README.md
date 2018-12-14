@@ -1,4 +1,4 @@
-# Please try the demo at 52.183.29.144:5000
+# Please try the demo at portal.mohanzhangprojects.com
 - Above url links to a server instance to demo this text summarization model.
 
 # Text Summarization Tool
