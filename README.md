@@ -1,3 +1,4 @@
+# Please be aware: the Text Summarization Demo is now limiting access.
 # Text Summarization Tool
 This repository is based on the ACL 2018 paper:
 
