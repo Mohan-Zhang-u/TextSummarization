@@ -1,6 +1,3 @@
-# Please try the demo at portal.mohanzhangprojects.com
-- Above url links to a server instance to demo this text summarization model.
-
 # Text Summarization Tool
 This repository is based on the ACL 2018 paper:
 
