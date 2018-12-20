@@ -1,9 +1,10 @@
 import os
 import sys
 import argparse
+import codecs
 
 def separate(args):
-    with open(os.path.join(args.target_file_location, args.target_file_name), "r") as f:
+    with codecs.open(os.path.join(args.target_file_location, args.target_file_name), "r",  encoding='utf-8') as f:
         file = f.read()
         file = file.split('\n')
         num_of_sent = args.num_of_sent
@@ -11,7 +12,7 @@ def separate(args):
         for i in range(0, len(file), num_of_sent):
             k+=1
             files = file[i:i + num_of_sent]
-            with open(os.path.join(args.storage_location, args.target_file_name + '_' + str(k)),'w') as fw:
+            with codecs.open(os.path.join(args.storage_location, args.target_file_name + '_' + str(k)),'w', encoding='utf-8') as fw:
                 for strings in files:
                     fw.write(strings + '\n')
 

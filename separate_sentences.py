@@ -1,5 +1,6 @@
 import sys
 import os
+import codecs
 
 
 def separate_by_dot(news_dir, tokenized_news_dir):
@@ -9,9 +10,9 @@ def separate_by_dot(news_dir, tokenized_news_dir):
     print("Separating sentences by dots...")
     for s in news:
         whole_article=""
-        with open(os.path.join(news_dir, s), "r") as fr:
+        with codecs.open(os.path.join(news_dir, s), "r", encoding='utf-8') as fr:
             whole_article = fr.read()
-        with open(os.path.join(tokenized_news_dir, s), "w") as fw:
+        with codecs.open(os.path.join(tokenized_news_dir, s), "w", encoding='utf-8') as fw:
             whole_article = whole_article.replace(".", ". \n \n")
             fw.write(whole_article)
 

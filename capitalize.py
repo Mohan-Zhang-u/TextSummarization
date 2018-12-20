@@ -2,6 +2,7 @@ import os
 import sys
 import argparse
 import nltk
+import codecs
 
 '''
 This python script is searching for any words in the original news article that are capitalized and not the first word
@@ -15,8 +16,8 @@ def capitalize(args):
     summmaries = os.listdir(args.summarization_path)
     to_write=''
     for summary in summmaries:
-        with open(os.path.join(args.original_news_path, summary), "r") as fo:
-            with open(os.path.join(args.summarization_path, summary), "r") as fs:
+        with codecs.open(os.path.join(args.original_news_path, summary), "r", encoding='utf-8') as fo:
+            with codecs.open(os.path.join(args.summarization_path, summary), "r", encoding='utf-8') as fs:
                 to_be_replaced = []
                 original_text = fo.read()
                 original_text_sentences = nltk.tokenize.sent_tokenize(original_text)
@@ -47,7 +48,7 @@ def capitalize(args):
                     b += i
                 b = b[1:]
                 to_write = b
-            with open(os.path.join(args.summarization_path, summary), "w") as fs:
+            with codecs.open(os.path.join(args.summarization_path, summary), "w", encoding='utf-8') as fs:
                 fs.write(b)
 
 
